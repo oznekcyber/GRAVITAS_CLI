@@ -28,9 +28,9 @@ def generate_variations(username: str) -> list:
     for suffix in ['_official', 'tv', 'yt', '_', '1', '123', '_real', 'official', '_hd']:
         variations.add(f"{username}{suffix}")
 
-    # Year suffixes (plausible birth years: 18+ years ago up to 2006)
+    # Year suffixes (plausible birth years: 1990 up to 18 years before current year)
     current_year = _dt.now().year
-    for year in range(1990, min(current_year - 17, 2009)):
+    for year in range(1990, max(current_year - 17, 2009) + 1):
         variations.add(f"{username}{year}")
 
     # Numbers

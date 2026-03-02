@@ -84,7 +84,7 @@ async def check_gravatar(email: str) -> dict:
     except Exception as exc:
         result = {"exists": False, "error": str(exc), "tag": "UNAVAILABLE"}
 
-    cache_set(cache_key, "gravatar", result)
+    cache_set(cache_key, "gravatar", result, CACHE_TTL_HOURS)
     return result
 
 

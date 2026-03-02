@@ -15,7 +15,7 @@
 
 - 🔍 **Email Intelligence** — Validate format, check Gravatar, analyze MX/SPF/DMARC DNS records, detect disposable domains
 - 💥 **Breach Database Lookup** — HaveIBeenPwned v3 API integration for breach and paste exposure
-- 🌐 **Platform Sweep** — Concurrent username check across 150+ platforms with enriched profile metadata
+- 🌐 **Platform Sweep** — Concurrent username check across 160+ platforms with enriched profile metadata
 - 🖥️ **IP Intelligence** — AbuseIPDB scoring, IPInfo geolocation, Shodan port/CVE scan, reverse DNS, and classification (Tor/VPN/datacenter/residential)
 - 📱 **Phone Intelligence** — Phonenumbers library + NumVerify API, VOIP detection, carrier lookup
 - 🔗 **Correlation Engine** — Cross-references findings: name matching, bio link graph, breach+platform overlap

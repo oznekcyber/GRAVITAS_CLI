@@ -83,5 +83,6 @@ def save_session(target_hash: str, inputs: dict, results: dict, gravity_score: i
         )
         conn.commit()
         conn.close()
-    except Exception:
-        pass
+    except Exception as exc:
+        import sys
+        print(f"[cache] Warning: failed to save session: {exc}", file=sys.stderr)
